@@ -3,16 +3,25 @@ import { defineField, defineType, defineArrayMember } from "sanity";
 export default defineType({
     title: "PromotionCard",
     type: "document",
-    name: "promotionCard",
+    name: "PromotionCard",
     fields: [
         defineField({
-            title: "PromotionCards",
+            title: "PromotionCard",
             type: "array",
-            name: "promotionCards",
+            name: "PromotionCard",
             of: [
                 defineArrayMember({
                     type: "image",
-                    name: "promotionCardImage",
+                    name: "PromotionCardImage",
+                    fields: [
+                        defineField({ type: "string", name: "description" }),
+                        defineField({ type: "string", name: "firstWords" }),
+                        defineField({ type: "string", name: "header" }),
+                        defineField({ type: "string", name: "text" }),
+                        defineField({ type: "string", name: "footer" }),
+                        defineField({ type: "string", name: "alt" }),
+                        defineField({ type: "number", name: "index" }),
+                    ],
                 }),
             ],
 
