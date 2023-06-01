@@ -10,7 +10,7 @@ import stomatology from './stomatology'
 import cosmetology from './cosmetology'
 import team from './team'
 import reviews from './reviews'
+import promotionCards from './promotionCards'
 
 
-
-export const schemaTypes = [post, author, category, blockContent, faq, promotions, reviews, gallery, standards, stomatology, cosmetology, team]
+export const schemaTypes = [post, author, category, blockContent, faq, promotions, reviews, gallery, standards, stomatology, cosmetology, team, promotionCards]
