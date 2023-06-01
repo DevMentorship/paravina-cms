@@ -7,6 +7,4 @@ import promotions from './promotions'
 import reviews from './reviews'
 import promotionCards from './promotionCards'
 
-
-
 export const schemaTypes = [post, author, category, blockContent, faq, promotions, reviews, promotionCards]
