@@ -11,6 +11,7 @@ import cosmetology from './cosmetology'
 import team from './team'
 import reviews from './reviews'
 import promotionCards from './promotionCards'
+import promotion from './promotion'
 
 
-export const schemaTypes = [post, author, category, blockContent, faq, promotions, reviews, gallery, standards, stomatology, cosmetology, team, promotionCards]
+export const schemaTypes = [post, author, category, blockContent, faq, promotions, reviews, gallery, standards, stomatology, cosmetology, team, promotionCards, promotion]
