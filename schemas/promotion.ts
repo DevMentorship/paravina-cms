@@ -6,8 +6,38 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: "index",
+      type: "number",
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'dateImage',
+      title: 'Date on Image',
+      type: 'string',
+    }),
+    defineField({
+      name: 'icon',
+      title: 'Icon image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'alt',
+      title: 'Alt',
       type: 'string',
     }),
     defineField({
