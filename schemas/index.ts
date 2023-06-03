@@ -12,4 +12,4 @@ import reviews from './reviews'
 import promotion from './promotion'
 import price from './price'
 
-export const schemaTypes = [post, author, category, blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, team, promotion, price]
+export const schemaTypes = [post, author, category, blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, team, promotion, price];
