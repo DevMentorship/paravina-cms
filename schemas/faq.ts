@@ -6,7 +6,7 @@ export default defineType({
     name: "faq",
     fields: [
         defineField({
-            title: "FaqItems",
+            title: "Faq Items",
             type: "array",
             name: "faqItems",
             of: [
