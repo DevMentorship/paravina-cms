@@ -7,11 +7,10 @@ import gallery from './gallery'
 import standards from './standards'
 import stomatology from './stomatology'
 import cosmetology from './cosmetology'
-import team from './team'
 import reviews from './reviews'
 import promotion from './promotion'
 import price from './price'
 import doctors from './doctors'
 
 
-export const schemaTypes = [post, author, category, blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, team, promotion, price, doctors];
+export const schemaTypes = [post, author, category, blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, promotion, price, doctors];
