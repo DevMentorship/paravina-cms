@@ -15,8 +15,8 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'blockContent',
-      title: 'BlockContent',
+      name: 'body',
+      title: 'Body',
       type: 'blockContent',
     }),
     defineField({
