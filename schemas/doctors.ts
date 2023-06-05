@@ -6,6 +6,10 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: "index",
+      type: "number",
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
@@ -23,6 +27,21 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
+    }),
+    defineField({
+      type: "string",
+      name: "name",
+      title: "Name"
+    }),
+    defineField({
+      type: "string",
+      name: "role",
+      title: "Role"
+    }),
+    defineField({
+      type: "image",
+      name: "doctorImage",
+      title: "DoctorImage"
     }),
   ],
 })
