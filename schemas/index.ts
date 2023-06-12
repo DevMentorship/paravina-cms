@@ -1,7 +1,4 @@
 import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
 import faq from './faq'
 import gallery from './gallery'
 import standards from './standards'
@@ -13,4 +10,4 @@ import price from './price'
 import doctors from './doctors'
 
 
-export const schemaTypes = [post, author, category, blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, promotion, price, doctors];
+export const schemaTypes = [blockContent, faq, reviews, gallery, standards, stomatology, cosmetology, promotion, price, doctors];
