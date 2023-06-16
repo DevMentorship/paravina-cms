@@ -1,4 +1,4 @@
-import { defineField, defineType, defineArrayMember } from "sanity";
+import { defineField, defineType } from "sanity";
 
 export default defineType({
     title: "Standards",
@@ -6,21 +6,21 @@ export default defineType({
     name: "standards",
     fields: [
         defineField({
-            title: "StandardImages",
-            type: "array",
-            name: "standardImages",
-            of: [
-                defineArrayMember({
-                    type: "image",
-                    name: "standardImage",
-                    fields: [
-                        defineField({ type: "string", name: "text" }),
-                        defineField({ type: "string", name: "title" }),
-                    ],
-                }),
-                
-            ],
-
-        })
+            name: "index",
+            type: "number",
+          }),
+        defineField({
+            title: "StandardImage",
+            type: "image",
+            name: "standardImage",
+        }),
+        defineField({ 
+            type: "string", 
+            name: "text"
+         }),
+        defineField({ 
+            type: "string",
+            name: "title" 
+        }),
     ]
 })
