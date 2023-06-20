@@ -1,4 +1,4 @@
-import { defineField, defineType, defineArrayMember } from "sanity";
+import { defineField, defineType } from "sanity";
 
 export default defineType({
     title: "Stomatology",
@@ -6,20 +6,21 @@ export default defineType({
     name: "stomatology",
     fields: [
         defineField({
+            name: "index",
+            type: "number",
+          }),
+        defineField({
             title: "StomatologyImages",
-            type: "array",
+            type: "image",
             name: "stomatologyImages",
-            of: [
-                defineArrayMember({
-                    type: "image",
-                    name: "stomatologyImages",
-                    fields: [
-                        defineField({ type: "string", name: "description" }),
-                        defineField({ type: "string", name: "title" }),
-                    ],
-                }),
-            ],
-
-        })
+        }),
+        defineField({
+             type: "string",
+              name: "description" 
+            }),
+        defineField({
+             type: "string", 
+             name: "title" 
+            }),
     ]
 })

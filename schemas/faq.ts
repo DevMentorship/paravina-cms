@@ -1,4 +1,4 @@
-import { defineField, defineType, defineArrayMember } from "sanity";
+import { defineField, defineType } from "sanity";
 
 export default defineType({
     title: "Faq",
@@ -6,20 +6,18 @@ export default defineType({
     name: "faq",
     fields: [
         defineField({
-            title: "Faq Items",
-            type: "array",
-            name: "faqItems",
-            of: [
-                defineArrayMember({
-                    type: "object",
-                    name: "inline",
-                    fields: [
-                        defineField({ type: "string", name: "title" }),
-                        defineField({ type: "string", name: "content" }),
-                    ],
-                }),
-            ],
-
-        })
+            name: "index",
+            type: "number",
+          }),
+        defineField({
+            title: "Title",
+            type: "string",
+            name: "title"
+        }),
+        defineField({
+            title: "Content", 
+            type: "string", 
+            name: "content"
+            }),
     ]
 })
